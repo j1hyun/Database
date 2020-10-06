@@ -151,3 +151,7 @@ mysql> select name from testtable;
  ## Table Column 추가
  > alter table 테이블명 add 컬럼명 자료형 옵션;
  
+ ## Table Column 위치 변경
+ > alter table 테이블명 modify column 컬렴명 자료형 after 바꿀위치앞의컬럼명;
+ 또는
+ > alter table 테이블명 modify column 컬럼명 자료형 first;
