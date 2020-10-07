@@ -152,6 +152,15 @@ mysql> select name from testtable;
  > alter table 테이블명 add 컬럼명 자료형 옵션;
  
  ## Table Column 위치 변경
- > alter table 테이블명 modify column 컬렴명 자료형 after 바꿀위치앞의컬럼명;
- 또는
- > alter table 테이블명 modify column 컬럼명 자료형 first;
+ > alter table 테이블명 modify column 컬렴명 자료형 after 바꿀위치앞의컬럼명;  
+ 또는  
+ > alter table 테이블명 modify column 컬럼명 자료형 first;  
+   
+ ## PRIMARY KEY 설정(기존 column을  primary key로 지정할 때)  
+ > alter table 테이블명 modify column 컬럼명 자료형 primary key;  
+  ex) alter table jongro modify column id char primary key;  
+     
+ ## FOREIGN KEY 설정(기존 column을 foreign key로 지정할 때)  
+ > alter table 테이블명 add foreign key (컬럼명) regerence 연결할테이블명(컬렴명);  
+  ex) alter power_table add foreign key (id) references jongro(id);   
+ 
