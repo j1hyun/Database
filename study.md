@@ -145,7 +145,7 @@ mysql> select name from testtable;
 3 rows in set (0.10 sec)  
 
 
- ## Table Column 확인
+ ## Table Column 정보 확인
  > desc tablename
  
  ## Table Column 추가
