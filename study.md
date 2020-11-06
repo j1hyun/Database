@@ -149,7 +149,13 @@ mysql> select name from testtable;
  > desc tablename
  
  ## Table Column 추가
- > alter table 테이블명 add 컬럼명 자료형 옵션;
+ > alter table 테이블명 add 컬럼명 자료형 옵션;  
+ 
+ ## Table Column 삭제
+ > alter table 테이블명 drop 컬럼명;  
+   
+ ## Table Column 자료형 변경  
+ > alter table 테이블명 modify 컬럼명 바꿀 자료형;
  
  ## Table Column 위치 변경
  > alter table 테이블명 modify column 컬렴명 자료형 after 바꿀위치앞의컬럼명;  
